@@ -1,0 +1,59 @@
+# aura-dark GRUB2 theme
+# Minimalist icon-first layout with subtle selected-item label
+
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#0B0D14"
+
+terminal-font: "Aura Regular 14"
+terminal-left: "12%"
+terminal-top: "12%"
+terminal-width: "76%"
+terminal-height: "76%"
+terminal-border: "0"
+
++ boot_menu {
+    left = 40%
+    top = 14%
+    width = 20%
+    height = 68%
+
+    item_font = "Aura Regular 18"
+    selected_item_font = "Aura Regular 18"
+
+    # Hide unselected labels; show only the active item in a subtle tone
+    item_color = "#00000000"
+    selected_item_color = "#E4E8F2"
+
+    icon_width = 56
+    icon_height = 56
+    item_icon_space = 16
+    item_height = 56
+    item_padding = 4
+    item_spacing = 14
+
+    item_pixmap_style = "item_*.png"
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = false
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 43%
+    top = 84%
+    width = 14%
+    height = 8
+    show_text = false
+    bar_style = "progress_bar_*.png"
+    highlight_style = "progress_highlight_*.png"
+}
+
++ label {
+    left = 30%
+    top = 88%
+    width = 40%
+    align = "center"
+    font = "Aura Regular 14"
+    color = "#7D8599"
+    text = "Up/Down  select   |   Enter  boot"
+}
