@@ -71,12 +71,14 @@ detect_grub_paths() {
 }
 
 rebuild_grub_cfg() {
+    # Run under LC_ALL=C: some locales (e.g. ko) use %2$s positional specifiers
+    # in grub.mo, which breaks bash's builtin printf in grub-mkconfig_lib.
     if command -v update-grub >/dev/null 2>&1; then
-        update-grub
+        LC_ALL=C update-grub
     elif command -v grub2-mkconfig >/dev/null 2>&1; then
-        grub2-mkconfig -o "$GRUB_CFG"
+        LC_ALL=C grub2-mkconfig -o "$GRUB_CFG"
     elif command -v grub-mkconfig >/dev/null 2>&1; then
-        grub-mkconfig -o "$GRUB_CFG"
+        LC_ALL=C grub-mkconfig -o "$GRUB_CFG"
     else
         echo "Error: no grub2-mkconfig / grub-mkconfig / update-grub found." >&2
         exit 1
