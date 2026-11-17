@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/screenshots/aura-light.png" alt="aura-light preview" width="100%" />
+
 # aura-grub
 
 **Minimalist Icon Bootloader Theme**

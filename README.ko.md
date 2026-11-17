@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/screenshots/aura-light.png" alt="aura-light 미리보기" width="100%" />
+
 # aura-grub
 
 **미니멀 아이콘 부트로더 테마**
