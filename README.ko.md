@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/screenshots/aura-light.png" alt="aura-light 미리보기" width="100%" />
+<img src="assets/screenshots/aura-main.png" alt="aura-grub 라이트 & 다크 미리보기" width="100%" />
 
 # aura-grub
 

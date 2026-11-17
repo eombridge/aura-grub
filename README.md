@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/screenshots/aura-light.png" alt="aura-light preview" width="100%" />
+<img src="assets/screenshots/aura-main.png" alt="aura-grub light & dark preview" width="100%" />
 
 # aura-grub
 
